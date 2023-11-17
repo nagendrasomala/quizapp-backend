@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://nagendrababusomala:Nagvenk2006@cluster0.wjcy0on.mongodb.net/quizapp");
+mongoose.connect("mongodb+srv://app");
 mongoose.set("strictQuery",true);
 var db = mongoose.connection;
 db.on("open",()=>console.log("connected to db"));
